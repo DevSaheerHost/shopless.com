@@ -1,0 +1,228 @@
+header{
+    background-color: white;
+    z-index: 9;
+    
+}
+header container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4%;
+    gap: 10px;
+}
+header container div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    justify-content: start;
+}
+.input-crrect{
+    width: 100% !important;
+}
+.logo> img{
+    width: 140px;
+}
+
+
+input-group{
+    padding: 4px 9px;
+    background-color: rgba(214, 232, 238, 0.61);
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+input-group input{
+    background-color: transparent;
+    line-height: 10px;
+    border: none;
+    font-size: large;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input-group svg.bi-search{
+    color: rgb(110, 110, 110);
+    height: 20px;
+    width: 20px;
+    margin: 8px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .card{
+    padding: 5px 9px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    max-width: max-content;
+    margin: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+header .card:hover{
+    background-color: rgb(235, 235, 235);
+}
+header .card svg{
+    color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+}
+
+header button{
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-left: 7px;
+    transition: all 0.1s;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border: 0.1px solid rgba(0, 0, 255, 0);
+}
+header button svg{
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+    margin-left: 0;
+}
+
+header button:hover{
+    color: blue;
+    background-color: white;
+    border: 0.1px solid blue;
+}
+
+header .menu-button{
+  display: none;
+}
+.menu-button svg{
+  height: 30px;
+  width: 30px;
+  margin: 8px;
+}
+
+.dp{
+    border-radius: 2000px;
+    overflow: hidden;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dp img{
+    width: 100%;
+}
+
+
+
+/* ----------responsive-------- */
+
+
+@media (max-width: 600px) {
+    /* input{
+        display: none;
+    } */
+    header img{
+      width: 100px !important;
+      margin-right: 8px;
+    }
+    header button {
+      display: none !important;
+    }
+
+}
+
+@media (max-width: 1192px){
+    header section{
+        overflow-x: scroll;
+    justify-content: normal;
+    }
+}
+
+@media (max-width: 500px) {
+  header input{
+    display: block;
+    font-size: normal;
+    line-height: auto;
+    font-size: 13px;
+  }
+  header nav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    max-width: 500px;
+    overflow: hidden;
+    background: white;
+    
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left !important;
+    transition: all .1s;
+    box-shadow: 0 0 50px rgba(0, 0,0.3);
+  }
+  .menuOppen{
+    width: 70%;
+    padding-left: 10px;
+  }
+  
+  header nav .card{
+    max-width: 90% !important;
+    width: 90% !important;
+    margin: 6px 3px;
+    background: #D6D6D6;
+    justify-content: left
+  }
+  header nav .card:nth-child(1){
+    margin-top: 70px;
+  }
+  header .menu-button{
+    display: block;
+    z-index: 2;
+  }
+  header input-group{
+    padding: 0px;
+  }
+  header button{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: auto;
+    background: aliceblue;
+    color: blue;
+    
+    margin: 9px 5px;
+  }
+  header button svg{
+    margin: 6px;
+  }
+ 
+  
+  
+}

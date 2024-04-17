@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body{
+    margin: 0;
+}
+
+
+
+
+
+
+.chapternav-wrapper{
+      padding: 0 3%;
+      background-color: #000000;
+      color: white;
+      text-align: center;
+  }
+  .chapternav-items {
+      margin-inline: var(--chapternav-paddle-width);
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;
+      list-style: none;
+      padding-bottom: 0px;
+      padding-top: 4px;
+  }
+  
+  .chapternav-item:first-child {
+      margin-inline-start: 0;
+      padding-inline-start: 4px;
+  }
+  
+  
+  .chapternav-item {
+      animation: chapternav-slidein 350ms backwards;
+  }
+  .chapternav-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 -.1176470588em;
+      padding: 0 20px;
+      white-space: nowrap;
+      overflow-y: hidden;
+      overflow-x: auto;
+      padding-top: 4px;
+      list-style: none;
+      padding-bottom: 50px;
+  }
+  abbr, blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hgroup, input, legend, li, ol, p, pre, ul {
+      margin: 0;
+      padding: 0;
+  }
+  
+  li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+      unicode-bidi: isolate;
+  }
+  
+  
+  .chapternav-link {
+      color: var(--chapternav-link-color);
+      display: block;
+      padding: 0;
+      position: relative;
+      text-decoration: none;
+      z-index: 1;
+  }
+  a {
+      color: var(--sk-body-link-color, rgb(0, 102, 204));
+      letter-spacing: inherit;
+  }
+  user agent stylesheet
+  a:-webkit-any-link {
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: underline;
+  }
+  
+  .chapternav-item-iphone-15-pro .chapternav-icon {
+      background-size: 38px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/ipadpro_dark__175htbn6m76u_large.svg);
+      width: 38px;
+      color: black;
+  }
+  .chapternav-item-iPad-pad-air .chapternav-icon {
+      background-size: 38px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/ipadair_dark__gi1t1iqta1yu_large.svg);
+      width: 38px;
+      
+  }
+  .chapternav-item-iPad .chapternav-icon {
+      background-size: 38px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/ipad_dark__fe8ocv9hktim_large.svg);
+      width: 38px;
+      
+  }
+  .chapternav-icon {
+      margin-bottom: 4px;
+  }
+  .chapternav-icon {
+      background: bottom no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      margin: 0 auto 4px;
+      height: 56px;
+  }
+  
+  .chapternav-label {
+      font-size: 12px;
+      line-height: 1.3333733333;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+      display: block;
+      margin: 0;
+  }
+  
+  
+  
+  /* 2 */
+  
+  .chapternav-item-iphone-15 .chapternav-icon {
+      background-size: 38px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/iphone/home/bt/images/chapternav/iphone_15_light__euftnkhrzdea_large.svg);
+      width: 38px;
+  }
+  
+  /* 4 */
+  
+  .chapternav-item-iphone-13 .chapternav-icon{
+      background-size: 22px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/iphone/home/bt/images/chapternav/iphone_13_light__ewo3e0sf67o2_large.svg);
+      width: 22px;
+  }
+  .chapternav-item-iphone-SE .chapternav-icon{
+      background-size: 22px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/iphone/home/bt/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg);
+      width: 22px;
+  }
+  .chapternav-item-iPad-mini .chapternav-icon{
+      background-size: 22px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/ipadmini_dark__cdfcygd422uu_large.svg);
+      width: 22px;
+  }
+  .chapternav-item-Apple-Pencil .chapternav-icon{
+      background-size: 22px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/apple_pencil_dark__c42qcvi9e802_large.svg);
+      width: 22px;
+  }
+  .chapternav-item-Accessories .chapternav-icon{
+      background-size: 22px 54px;
+      background-repeat: no-repeat;
+      background-image: url(https://www.apple.com/v/ipad/home/ci/images/chapternav/ipad_acc_dark__bo0a4ftei9au_large.svg);
+      width: 22px;
+  }
+  
+  
+  /* Choose an iphone text */
+
+  .title{
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+    color: white;
+
+    margin-bottom: 140px;
+  }
+
+
+
+  /* banner wrapper (Bigg image) */
+
+  .banner-wrapper{
+    height: 80dvh;
+    background-color: #000;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+  }
+
+  .banner-wrapper .section-content{
+    margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+  }
+@media only screen and (min-width: 1441px) {
+    .section-content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+    }
+}
+
+
+
+
+.image-wrapper{
+    width: 200px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+.banner-wrapper{
+    width: 100%;
+    
+}
+ figure{
+    background-image: url(https://www.apple.com/in/ipad/home/images/overview/hero/ipad_pro_hero__bh3eq6sqfjw2_large_2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+}
+
+
+/* Products */
+
+.selector__wizard > *, *::before, *::after {
+    box-sizing: border-box;
+}
+.selector__wizard--step-1{
+  width: 100%;
+  padding: 10px;
+}
+.selector__wizard{
+    width: 100%;
+}
+
+.selector__wizard--step-1 .products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.selector__wizard--step-1 .products .product {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.selector__wizard .product {
+    text-align: center;
+    color: inherit;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+}
+
+.selector__wizard .product:hover{
+    border: 1px solid blue;
+}
+
+.selector__wizard .product__image-wrapper {
+    height: 130px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.selector__wizard .product__image-wrapper img {
+    align-self: flex-end;
+    display: block;
+    max-height: 130px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (min-width: 768px){
+.selector__wizard {
+    flex: 0 0 75%;
+    /* max-width: 75%; */
+    max-width: 100%;
+}
+}
+
+@media (min-width: 992px){
+.selector__wizard--step-1 .products .product {
+    flex: 0 0 25.0%;
+    max-width: 25.0%;
+}
+}
+
+/*  Dark theme */
+
+/*@media (prefers-color-scheme: dark){
+ .selector__wizard {
+    background-color: #212121;
+    color: #fff;
+} 
+
+}
+*/
+

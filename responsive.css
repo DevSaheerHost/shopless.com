@@ -1,0 +1,228 @@
+@media (max-width: 600px) {
+    /* input{
+        display: none;
+    } */
+    main{
+        padding: 0;
+    }
+    header img{
+      width: 100px !important;
+      margin-right: 0px;
+    }
+    button {
+      display: none !important;
+    }
+
+    .slider-pc{
+      display: none;
+    }
+    .slider-mob{
+      display: block;
+    }
+}
+
+@media (max-width: 1192px){
+    header section{
+        overflow-x: scroll;
+    justify-content: normal;
+    }
+}
+
+@media (max-width: 500px) {
+  header input{
+    display: block;
+    font-size: normal;
+    line-height: auto;
+    font-size: 13px;
+  }
+  header nav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    max-width: 500px;
+    overflow: hidden;
+    background: white;
+    
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left !important;
+    transition: all .1s;
+    box-shadow: 0 0 50px rgba(0, 0,0.3);
+  }
+  .menuOppen{
+    width: 70%;
+    padding-left: 10px;
+  }
+  header nav .card{
+    max-width: 90% !important;
+    width: 90% !important;
+    margin: 6px 3px;
+    background: #D6D6D6;
+    justify-content: left
+  }
+  header nav .card:nth-child(1){
+    margin-top: 70px;
+  }
+  header .menu-button{
+    display: block;
+    z-index: 3;
+  }
+  header input-group{
+    padding: 0px;
+  }
+  header button{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: auto;
+    background: aliceblue;
+    color: blue;
+    
+    margin: 9px 5px;
+  }
+  header button svg{
+    margin: 6px;
+  }
+  section.top-list{
+    padding: 0 10px;
+    overflow: scroll;
+    justify-content: space-between;
+    height: min-content;
+    margin: 0;
+    gap: .7rem;
+    margin-top: 1px;
+  }
+  section.top-list .card{
+    min-width: max-content;
+    height: 80px;
+    margin: 0 10px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+  }
+  section.top-list .card img{
+    width: 40px;
+    margin-bottom: 1rem;
+  }
+  section.top_list .card label{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+  }
+  .samsung img{
+    transform: scale(2.5) translateY(5px);
+  }
+  
+  section.top-list .card:nth-child(6) {
+    padding-right: 20px;
+  }
+  
+  .slider-pc{
+    display: none;
+  }
+  /* .slides{
+    display: none;
+  } */
+
+  /* .product_section{
+    transform: translateY(100px);
+  } */
+/* .slider{
+  display: none;
+} */
+  .slider img{
+    height: 100% !important;
+  }
+
+  .welcome_section{
+    transform: translateY(100px);
+  }
+  
+  section.offer{
+    margin: 0;
+    display: none;
+    align-items: stretch;
+    border: none !important;
+    list-style: none;
+  }
+
+  section.suggest-1 h2{
+    font-weight: normal;
+  }
+
+  section{
+    font-size: 13px;
+  }
+  
+}
+
+
+@media (max-width: 300px) {
+  section.suggest-1 container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.suggest-1 .card{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  header container{
+    padding: 10px 5px;
+  }
+  /* header .card{
+    padding:;
+  } */
+
+  .flex{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: 16px;
+}
+
+.product_card{
+  overflow: hidden;
+  border-radius: .6rem;
+  margin: 10px;
+}
+.product_card img{
+  max-width: 100%;
+}
+.logo img{
+  margin: 0;
+}
+
+.accountcard{
+  top: 120px;
+  left: auto;
+  right: 19px;
+  margin: auto;
+}
+  
+}
+
+@media (max-width: 320px) {
+  .flex{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Number Login with Firebase</title>
+  <!-- Firebase JavaScript SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <!-- Your Firebase config -->
+  <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCsTD5XSRNl7VG-i6Ir0F3D1X1PxWk2Rfs",
+    authDomain: "shopify-30670.firebaseapp.com",
+    projectId: "shopify-30670",
+    storageBucket: "shopify-30670.appspot.com",
+    messagingSenderId: "792157900529",
+    appId: "1:792157900529:web:32d02d2d8b3fe05d94e350",
+    measurementId: "G-MZC38NN5BZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Phone Number Login with Firebase</h2>
+    <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+    <button onclick="sendOTP()">Send OTP</button>
+    <input type="text" id="otp" placeholder="Enter OTP">
+    <button onclick="signInWithOTP()">Sign In</button>
+    <!-- reCAPTCHA container -->
+    <div id="recaptcha-container"></div>
+  </div>
+
+  <script>
+    function sendOTP() {
+      var phoneNumber = document.getElementById('phoneNumber').value;
+      var appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+        'size': 'invisible'
+      });
+      firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+        .then(function (confirmationResult) {
+          window.confirmationResult = confirmationResult;
+          console.log("OTP sent successfully");
+          alert("OTP sent successfully!");
+        }).catch(function (error) {
+          console.error("Error sending OTP:", error);
+          alert("Error: " + error.message);
+        });
+    }
+
+    function signInWithOTP() {
+      var otp = document.getElementById('otp').value;
+      confirmationResult.confirm(otp)
+        .then(function (result) {
+          console.log("User signed in successfully:", result.user);
+          alert("Logged in successfully!");
+        }).catch(function (error) {
+          console.error("Error signing in:", error);
+          alert("Error: " + error.message);
+        });
+    }
+  </script>
+</body>
+</html>

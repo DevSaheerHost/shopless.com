@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    font-family: Google Sans Display, Roboto, Arial, sans-serif;
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    color: #3c4043;
+}
+
+
+.new{
+    background-color: #e3edf7;
+    border-radius: 1000px;
+    /* box-shadow: 0 0 5px ; */
+    padding: 4px 8px;
+    font-size: x-small;
+    margin: 6px 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    padding: 0 60px;
+}
+
+
+.accountcard {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: .6rem;
+    z-index: 99;
+    cursor: pointer;
+    top: 80px;
+    right: 100px;
+    overflow: hidden;
+
+
+    display: none;
+
+
+}
+
+.accountcard .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.accountcard .id_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.dp1 {
+    width: 30px;
+    border-radius: 3000px;
+}
+
+.account_nav {
+    min-width: 100%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 10px;
+}
+
+.account_nav span {
+    margin-left: auto;
+}
+
+
+.product_section .container {
+    width: 100%;
+}
+
+.product_section .title {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 20px 0;
+    /* color: rgb(92, 92, 92); */
+
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+
+
+.text-banner{
+    font-size: 60px;
+    letter-spacing: -2px;
+    line-height: 68px;
+    color: #3c4043;
+    overflow: visible !important;
+    text-align: center;
+
+    display: block !important;
+    padding-top: 50px;
+    background-color: transparent !important;
+}
+
+
+
+
+.banner {
+    border-radius: 28px;
+    overflow: hidden;
+    display: grid;
+    background-color: #e3edf7;
+    margin: 20px auto;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.banner-pixel8 {
+    border-radius: 28px;
+    overflow: hidden;
+    display: grid;
+    background-color: #f2faf3;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+.banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.left_section {
+    padding: 20px;
+    /* background-color: #e3edf7; */
+    min-width: 30%;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left_section h1 {
+    display: block;
+}
+
+.left_section .learn_btn{
+    border: 2px solid rgb(104, 104, 104);
+    color: rgb(104, 104, 104);
+    padding: 7px 15px;
+    border-radius: .4rem;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+    width: max-content;
+}
+
+.flex {    /* model scroll section */
+    display: flex;
+    align-items: end;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 0 calc((100% - min(100%, 1392px))/2);
+    box-shadow: inset 0 -1px 0px rgb(190, 190, 190);
+    gap: 8px;
+    justify-content: space-around;
+
+    margin: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex .card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    scroll-snap-align: center;
+    max-width: 120px;
+    min-width: 100px;
+    justify-content: space-between;
+
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.flex .card img {
+    aspect-ratio: 240/240;
+    max-width: 100%;
+}
+
+.two-mob-wraper{
+    
+    max-width: max-content;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin: 20px auto;
+}
+.two-mob-wraper .card{
+    background-color: #f8f9fa;
+    overflow: hidden;
+    border-radius: 28px;
+    padding-bottom: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+.two-mob-wraper img{
+    max-width: 100%;
+}
+.two-mob-wraper div.btn-blue{
+    background-color: rgb(9, 74, 252);
+    padding: 7px 15px;
+    border-radius: .2rem;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    width: max-content;
+    a{
+        color: white;
+    }
+}
+.color-gray{
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 100px;
+    min-height: 10px;
+    width: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: gray;
+}
+.color-white{
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 100px;
+    min-height: 10px;
+    width: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: white;
+}
+.color-black{
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 100px;
+    min-height: 10px;
+    width: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: black;
+}
+.text-wrapper{
+    display: block;
+    padding: 20px;
+    color: #3c4043;
+    
+}
+.sec-text-wrapper{
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sub-text{
+    display: inline-block;
+    max-width: 524px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec-mob-wraper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.sec-mob-wraper .card{
+    max-width: 550px;
+    background-color: #f5f2ec;
+    padding: 40px;
+    /* padding-bottom: 26%; */
+}
+.sec-mob-wraper .card:nth-child(1){
+    padding: 0;
+}
+.text-wrapper-center{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.three-card-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 20px;
+    gap: 25px;
+}
+.three-card-wraper .card{
+    border-radius: 28px;
+    padding: 40px;
+    background-color: #e3edf7;
+    width: 100%;
+}
+.card h1{
+    font-size: 1.6rem;
+}
+.card span{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 1110px) {
+    .three-card-wraper{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    main{
+        padding: 0 20px;
+    }
+    
+    .banner {
+        border-radius: 28px;
+        overflow: hidden;
+        display: grid;
+    
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .three-card-wraper{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .three-card-wraper .card{
+        padding: 20px;
+    }
+    
+    .sec-mob-wraper .card:nth-child(2){
+        padding: 20px;
+    }
+}

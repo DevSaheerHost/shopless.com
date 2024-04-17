@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="shortcut icon" href="https://cdn.shopify.com/shopifycloud/web/assets/v1/favicon-default-6cbad9de243dbae3.ico" type="image/x-icon">
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        
+    <title>Loading...</title>
+</head>
+
+<body>
+    <header>
+        <container>
+            <div class="input-crrect">
+            <div class="logo">
+                <img id="logoimg" src="https://res.cloudinary.com/saheerbabu/image/upload/v1712492779/webDevelopment/Shopless/Images/Logo/logo_light.jpg"
+                    alt="">
+            </div>
+            <input-group>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+
+                <input type="search" name="search" id="search" placeholder="Search for Products, Brands and More ">
+            </input-group>
+        </div>
+            <nav class="menu-nav">
+                <div class="card" id="accountCard">
+                    <span class="dp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg></span>
+                    <label id="name_label">Guest</label>
+
+
+                    <div class="accountcard">
+                      <div class="container">
+                        <div class="account_nav">
+                          <div class="id_wrapper">
+                          
+                            <img class="dp1" alt="">
+                            <label class="name_label">Mail</label>
+                           
+                            </span>
+                          
+                        </div>
+                          <span class="close_account_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></span>
+                        </div>
+                        
+                        <button>Logout</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card" id="nav_cart">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                            <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                          </svg>
+                        </span>
+                        <label class="cart">Cart</label>
+
+                        
+                </div>
+                <button class="login"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                  </svg><span>Login</span></button>
+            </nav>
+            <span class="menu-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </span>
+        </container>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    <main>
+        <container class="main-container">
+            <section class="top-list">
+                <div class="card">
+                    <div>
+                      <a href="products\apple\">
+                      <img class="apple" src="assets/icons/apple-svgrepo-com.svg" alt="apple_">
+                    </a>
+                      <!-- <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="Grocery"> -->
+                    </div>
+                    <label for="">Apple</label>
+                </div>
+                <div class="card google">
+                    <div>
+                      <a href="./products/android/googlePixel/">
+                      <img class="google" src="assets/icons/google.svg" alt="apple_">
+                    </a>
+                      <!-- <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="Grocery"> -->
+                    </div>
+                    <label for="">Google</label>
+                </div>
+                <div class="card">
+                    <div>
+                      <img src="assets/icons/oneplus-mobile-logo-icon.svg" alt="mobiles"></div>
+                    <label for="">One Plus</label>
+                </div>
+                <div class="card">
+                    <div><img src="assets/icons/xiaomi-mi-logo-icon.svg" alt="fashion"></div>
+                    <label for="">Xiaomi</label>
+                </div>
+                <div class="card">
+                    <div><img src="assets/icons/realme-mobile-logo-icon.svg" alt="H&F"></div>
+                    <label for="">Realme</label>
+                </div>
+                <div class="card samsung">
+                    <div><img src="assets/icons/Samsung.svg" alt="H&F"></div>
+                    <label for="">Samsung</label>
+                </div>
+                
+            </section>
+            <style>
+                .slider {
+                  position: relative;
+                  overflow: hidden;
+                  height: 300px;
+                  height: max-content;
+                }
+                .slides {
+                  display: flex;
+                  transition: transform 1s ease;
+                  height: 100%;
+                }
+                .slide, .slide-mob {
+                  min-width: 100%;
+                  transition: opacity 0.5s ease;
+                  position: relative;
+                }
+                .slide img , .slide-mob img{
+                  width: 100%;
+                  height: auto;
+                }
+                @media (max-width: 500px){
+                  .slider {
+                    height:auto;
+                    max-height: 160px;
+                  }
+                }
+              </style>
+              
+              
+              <div class="banner-add-wrapper">
+
+                <div class="slide">
+                  <img class="addImage" id="ads1" src="" alt="">
+                </div>
+                <div class="slide">
+                  <img class="addImage" id="ads2" src="" alt="">
+                </div>
+                <div class="slide">
+                  <img class="addImage" id="ads3" src="" alt="">
+                </div>
+                
+              </div>
+              
+              
+                
+                <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>    
+              <script src="main.js"></script>
+              
+              
+              
+              <section class="offer">
+                <container>
+                  <card>
+                    <img src="3" alt="#">
+                    <span for="">Top 100 Earbuds</span>
+                    <h3>From $699</h3>
+                  </card>
+                  
+                  <card>
+                    <img src="#" alt="#">
+                    <label for="">Top 100 Earbuds</label>
+                    <h3>From $699</h3>
+                  </card>
+                  
+                  <card>
+                    <img src="#" alt="#">
+                    <label for="">Top 100 Earbuds</label>
+                    <h3>From $699</h3>
+                  </card>
+                </container>
+              </section>
+
+
+              <!-- Sugested for you -->
+
+              <section class="suggest-1">
+                <h4>Suggested for You</h4>
+                <container>
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/w/r/j/smoks2b286-chemforce-original-imagxtfnuqfynq4t.jpeg" alt="">
+                    <div class="column">
+                      <span class="product-name">vizo Pouch for OnePlus 12R 5G</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/front-back-case/b/d/s/rkcipakrmn1269-mobtech-original-imagxdhkbyzbwxkd.jpeg" alt="">
+                    <div class="column">
+                      <span>Mobtech Back Cover for Motorola Moto G34 5G</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/z/j/a/mn-78-21-000025-phone-case-cover-original-imagzsgkhz9hzamz.jpeg" alt="">
+                    <div class="column">
+                      <span>KGL KING Pouch for Vivo T2X 5G, Vivo T2X</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/h/j/j/smoke-blue-g60-2-caseline-original-imagusr3gvpeew4r.jpeg" alt="">
+                    <div class="column">
+                      <span>jpmobilecases Pouch for Vivo Y200 5G (IPK)</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/m/n/q/bum10-prim03-chemforce-original-imagu6yrbfybgxmd.jpeg" alt="">
+                    <div class="column">
+                      <span>Mobtech Pouch for APPLE iPhone 15</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class="card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/back-cover/r/v/p/mn-ipk-216-hyd-bc479-hydbest-original-imagtbzhffgzabug.jpeg" alt="">
+                    <div class="column">
+                      <span class="product-name">NIKICOVER Pouch for Vivo V29e 5G</span>
+                    <span class="product-price">₹259 <span class="old-price"><del>429</del></span></span>
+                    </div>
+                  </div>
+
+                </container>
+              </section>
+
+              <!-- <section class="welcome_section">
+                <div class="container welcome_container">
+                  <h2>WELCOME TO</h2>
+                  <img id="logoimg" src="https://res.cloudinary.com/saheerbabu/image/upload/v1712492779/webDevelopment/Shopless/Images/Logo/logo_light.jpg"
+                    alt="" style="width: 60%;">
+                </div>
+              </section> -->
+
+
+              <div class="product_section">
+                <div class="container">
+                  <h2 class="title">Choose our <span class="fill_bg">product</span></h2>
+                  <div class="flex">
+                    
+                    
+                    <a class="product_card" href="products/cables/">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-CABLE.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-POWER.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-AUDIO.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-KEYB.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-MOUSE.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-connect.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-GAMING.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-HOLDER-STAND.jpg" alt="">
+                    </a>
+                    <a class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-TWS.jpg" alt="">
+                    </a>
+                    <a  class="product_card" href="#">
+                      <img src="https://bizcode.sgp1.digitaloceanspaces.com/public/explore-category/Bizcode-Categeries-OTHER.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              
+        </container>
+        
+        <loading>
+          <container>
+            <div class="preloader">
+              <svg class="Lcart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                  <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                    <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                    <circle cx="43" cy="111" r="13" />
+                    <circle cx="102" cy="111" r="13" />
+                  </g>
+                  <g class="cart__lines" stroke="currentColor">
+                    <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                    <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                      <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                    </g>
+                    <g class="cart__wheel2" transform="rotate(90,102,111)">
+                      <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <div class="preloader__text">
+                <p class="preloader__msg">Loading...</p>
+                <p class="preloader__msg preloader__msg--last">Almost there </p>
+              </div>
+            </div>
+          </container>
+        </loading>
+    </main>
+    
+    
+  
+      <!--Tab to edit-->
+    
+</body>
+
+</html>
