@@ -37,6 +37,24 @@ if (item.ads2) {
 if (item.ads3) {
   ads3.src=item.ads3
 }
+if (item.ads4) {
+  ads4.src=item.ads4
+}
+if (item.ads5) {
+  ads5.src=item.ads5
+}
+if (item.ads6) {
+  ads6.src=item.ads6
+}
+if (item.ads7) {
+  ads7.src=item.ads7
+}
+if (item.ads8) {
+  ads8.src=item.ads8
+}
+if (item.ads9) {
+  ads9.src=item.ads9
+}
 // document.querySelector(".addImgMobile").src=item
     
     
@@ -220,3 +238,6 @@ function showSlides() {
   slides[slideIndex-1].style.animationDuration = "4s";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
+
+
+
