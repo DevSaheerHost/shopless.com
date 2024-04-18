@@ -104,7 +104,7 @@ const firebaseConfig = {
     })
   
   
-  
+        $(".accountcard").hide(200)
     $("#accountCard").click(function () {
       $(".accountcard").toggle(200)
     })
