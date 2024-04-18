@@ -12,7 +12,7 @@ const firebaseConfig = {
   
   firebase.initializeApp(firebaseConfig);
   var database = firebase.database();
-  var ref = firebase.database().ref('shopless/products/apple/iphone/');
+  var ref = firebase.database().ref('shopless/products/apple/iphone/models/');
   
   
   // Assuming you want to access an item with the key 'itemId'
@@ -45,9 +45,9 @@ ref.on('child_added', function(snapshot) {
 let products = document.querySelector(".products1")
 
 products.innerHTML+=`
-<a href="ip_8/" class="product">
+<a href="${data.href}" class="product">
                             <div class="product__image-wrapper">
-                                <img src="${data.product_image}" alt="Mac">
+                                <img src="${data.product_image}" alt="product">
                             </div>
                             ${data.product_name}
                         </a>`
