@@ -33,7 +33,7 @@ main .container{
 }
 .color-wrapper .color{
     padding: 5px;
-    background-color: rgb(66, 68, 66);
+    background-color: rgb(255, 196, 4);
     width: 3px;
     height: 3px;
     border-radius: 666px;
