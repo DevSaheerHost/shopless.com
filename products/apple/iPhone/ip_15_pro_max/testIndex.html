@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+
+    <div class="productList">
+
+    </div>
+<style>
+    .card{
+        padding: 10px;
+        border-radius: .4rem;
+        box-shadow: 0 0 10px black;
+        margin: 20px;
+        
+    }
+</style>
+    <script>
+        const products = [
+            {id: "ip_14", name: "iPhone 14", price: "₹1,2999"},
+            {id: "ip_14_pro", name: "iPhone 14 pro", price: "₹1,3999"},
+            {id: "ip_14_mini", name: "iPhone 14 mini", price: "₹1,0999"}
+        ]
+
+        function makeProducts(product){
+            return `
+            <div class="product card">
+                <a href="./buy.html?id=${product.id}">
+                <img src="https://ipsw.me/assets/devices/iPhone16,2.png" alt="l">
+                <h2>${product.name}</h2>
+                <p>${product.price}</p>
+                </a>
+            </div>`
+        }
+
+
+        function showList() {
+            const productListDiv = document.querySelector('.productList')
+
+            products.forEach(product =>{
+                productListDiv.innerHTML+= makeProducts(product)
+            })
+        }
+
+        document.addEventListener('DOMContentLoaded', showList)
+        //makeProducts()
+    </script>
+
+
+</body>
+</html>

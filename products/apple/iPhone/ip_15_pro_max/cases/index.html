@@ -145,9 +145,43 @@
                         <span class="product_name">RECCI RTC-P19CC PD 100W TYPE-C TO TYPE-C FAST CHARGING CABLE 1.5M</span>
                     </div> -->
                 </div>
+                <!-- <div class="productList">
+                    
+                </div> -->
             </div>
         </div>
     </main>
+
+    <!-- <script>
+        const products = [
+            {id: "ip_14", name: "iPhone 14", price: "₹1,2999"},
+            {id: "ip_14_pro", name: "iPhone 14 pro", price: "₹1,3999"},
+            {id: "ip_14_mini", name: "iPhone 14 mini", price: "₹1,0999"}
+        ]
+
+        function makeProducts(product){
+            return `
+            <div class="product card">
+                <a href="./buy.html?id=${product.id}">
+                <img src="https://ipsw.me/assets/devices/iPhone16,2.png" alt="l">
+                <h2>${product.name}</h2>
+                <p>${product.price}</p>
+                </a>
+            </div>`
+        }
+
+
+        function showList() {
+            const productListDiv = document.querySelector('.productList')
+
+            products.forEach(product =>{
+                productListDiv.innerHTML+= makeProducts(product)
+            })
+        }
+
+        document.addEventListener('DOMContentLoaded', showList)
+        //makeProducts()
+    </script> -->
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
