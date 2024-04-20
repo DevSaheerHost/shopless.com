@@ -30,7 +30,7 @@ ref.on('child_added', function (snapshot) {
   cableSec.innerHTML += `
   <a class="product_card" href="./cases/">
   <img class="caseImage" src="${data.product_image}" alt="">
-  <h2>Case</h2>
+  <h2>${data.product_name}</h2>
 </a>`
 
 
