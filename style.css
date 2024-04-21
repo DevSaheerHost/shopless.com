@@ -75,15 +75,28 @@ input-group input{
     width: 100%;
     border-radius: 5px;
 }
+/* header:has(input:focus-visible){ */
+  .headerFix{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  z-index: 66;
+}
+.bodyOwerflowHide{
+  overflow: hidden !important;
+  /* height: 300px; */
+}
 .out{
   display: block;
   position: fixed;
-  top: 100px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   display: none;
 }
 /* #search:focus + .out{
@@ -227,8 +240,8 @@ header .menu-button{
   border-radius: .4rem;
 
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
   padding: 2px 5px;
 }
 .search-option p{
@@ -236,7 +249,7 @@ header .menu-button{
   text-align: center;
   overflow: hidden;
   margin: 10px 5px 10px 5px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .sml-icon{
   max-height: 35px;

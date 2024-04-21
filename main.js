@@ -179,9 +179,13 @@ $(document).ready(function () {
     $(".menu-button").toggle()
     $(".close-input").toggle()
     $(".out").toggle(200)
+    document.querySelector("header").classList.toggle("headerFix")
+    document.body.classList.toggle("bodyOwerflowHide")
   })
 
   $(".close-input").click(function () {
+    document.querySelector("header").classList.toggle("headerFix")
+    document.body.classList.toggle("bodyOwerflowHide")
     $(".menu-button").toggle()
     $(".close-input").toggle()
     $(".out").toggle(200)
@@ -292,7 +296,7 @@ function show() {
 }
 
 
-  
+
 
 
 
