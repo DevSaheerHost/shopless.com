@@ -252,6 +252,7 @@ header .menu-button{
   width: 100%;
   text-align: center;
   overflow: hidden;
+  font-size: 13px;
   margin: 10px 5px 10px 5px;
   /* display: inline-block; */
 }
