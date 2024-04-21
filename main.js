@@ -241,3 +241,33 @@ function showSlides() {
 
 
 
+const products = [
+  {heading: "gfgklk", text: "kkkkk", image: "/", class: "a"},
+  {heading: "kkk", text: "xcvm", image: "llkkkkkkk", class: "b"},
+  {heading: ",kk,,", text: "xcxlm", image: "kk", class: "c"},
+]
+function createItem(item){
+return `<div class="user-product card">
+<div class="text-wrapper">
+  <h3>${item.heading}</h3>
+  <p> ${item.text}</p>
+</div>
+<style>
+.${item.class}{
+  background-image: url("${item.image}");
+  min-width: 300px;
+}
+
+</style>
+
+</div>`
+}
+function show() {
+  
+const itemDiv = document.querySelector("#itemList")
+products.forEach(product =>{
+  itemDiv.innerHTML+=createItem(product)
+})
+}
+
+document.addEventListener('DOMContentLoaded', show)

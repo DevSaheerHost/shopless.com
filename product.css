@@ -1,0 +1,45 @@
+.user-product-sec{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    overflow: unset;
+    background-color: transparent;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+}
+.user-product-sec .user-product-wrapper{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    gap: 0;
+}
+.user-product-sec .card{
+    background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-magsafe-202403_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1707850767641");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 1.2rem;
+    min-width: 270px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    & img{
+        width: 100%;
+    }
+    & .text-wrapper{
+        display: block;
+        /* background-color: red; */
+        margin: 0;
+        margin-top: 10px;
+    }
+}
