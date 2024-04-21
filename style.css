@@ -91,13 +91,17 @@ input-group input{
 .out{
   display: block;
   position: fixed;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: white;
   z-index: 3;
   display: none;
+}
+.outShow{
+  display: block;
+  z-index: 999;
 }
 /* #search:focus + .out{
   display: block;
