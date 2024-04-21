@@ -75,6 +75,25 @@ input-group input{
     width: 100%;
     border-radius: 5px;
 }
+.out{
+  display: block;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+  display: none;
+}
+/* #search:focus + .out{
+  display: block;
+  background-color: red;
+  width: calc(input);
+  height: 100px;
+  padding: 10px;
+  z-index: -2;
+} */
 
 input-group svg.bi-search{
     color: rgb(110, 110, 110);
@@ -153,10 +172,75 @@ header button:hover{
 header .menu-button{
   display: none;
 }
-.menu-button svg{
+.close-input{
+  display: none;
+}
+.menu-button svg, .close-input svg{
   height: 30px;
   width: 30px;
   margin: 8px;
+}
+
+/* ----------searching auto fill style--------- */
+
+.item{
+  padding: 6px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.item .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-wrapper .i{
+  display: flex;
+  align-items: center;
+}
+.item .icon{
+  height: 40px;
+  width: 40px;
+}
+
+.item2{
+  margin-top: 30px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+.item2 a{
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+}
+.search-option{
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  max-width: max-content;
+  padding: 0px 10px;
+  border-radius: .4rem;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 2px 5px;
+}
+.search-option p{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px 5px 10px 5px;
+  display: inline-block;
+}
+.sml-icon{
+  max-height: 35px;
+  max-width: 35px;
 }
 
 
