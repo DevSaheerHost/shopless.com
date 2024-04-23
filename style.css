@@ -202,7 +202,7 @@ header .menu-button{
 
 .item{
   padding: 6px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 .item .content-wrapper{
@@ -259,6 +259,25 @@ header .menu-button{
 .sml-icon{
   max-height: 35px;
   max-width: 35px;
+}
+
+
+
+.autocomplete-items{
+  position: absolute;
+  top: 0;
+  /*   */
+  /* right: 60%; */
+  
+  margin: auto;
+  display: block;
+  width: 100%;
+  background-color: white;
+
+}
+.autocomplete-items .item{
+  background-color: white;
+  
 }
 
 
