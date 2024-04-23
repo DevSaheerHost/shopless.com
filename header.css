@@ -273,3 +273,119 @@ nav{
   
   
 }
+
+/* ----------searching auto fill style--------- */
+
+.item{
+  padding: 6px 10px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-wrapper .i{
+  display: flex;
+  align-items: center;
+}
+.item .icon{
+  height: 40px;
+  width: 40px;
+}
+
+.item2{
+  margin-top: 30px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+.item2 a{
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+}
+.search-option{
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  max-width: max-content;
+  padding: 0px 10px;
+  border-radius: .4rem;
+
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  padding: 2px 5px;
+}
+.search-option p{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 13px;
+  margin: 10px 5px 10px 5px;
+  /* display: inline-block; */
+}
+.sml-icon{
+  max-height: 35px;
+  max-width: 35px;
+}
+
+
+
+.autocomplete-items{
+  position: absolute;
+  top: 0;
+  /*   */
+  /* right: 60%; */
+  
+  margin: auto;
+  display: block;
+  width: 100%;
+  background-color: white;
+
+}
+.autocomplete-items .item{
+  background-color: white;
+  
+}
+
+
+
+
+
+
+/* header:has(input:focus-visible){ */
+  .headerFix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    z-index: 66;
+  }
+  .bodyOwerflowHide{
+    overflow: hidden !important;
+    /* height: 300px; */
+  }
+  .out{
+    display: block;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 3;
+    display: none;
+  }
+  .outShow{
+    display: block;
+    z-index: 999;
+  }
