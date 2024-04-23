@@ -485,8 +485,28 @@ var allMobiles = [
   "Xiaomi Mi 11", "Sony Xperia 1 II", "Oppo Find X3 Pro",
   "Huawei P40 Pro", "Motorola Edge Plus", "Asus ROG Phone 5",
   "Realme GT", "Vivo X60 Pro", "Nokia 8.3 5G",
-  "LG Wing", "HTC U12+", "Lenovo Legion Phone Duel"
+  "LG Wing", "HTC U12+", "Lenovo Legion Phone Duel", 
+
+
+  "Google Pixel", "Google Pixel XL", "Google Pixel 2", "Google Pixel 2 XL",
+  "Google Pixel 3", "Google Pixel 3 XL", "Google Pixel 3a", "Google Pixel 3a XL",
+  "Google Pixel 4", "Google Pixel 4 XL", "Google Pixel 4a", "Google Pixel 4a (5G)",
+  "Google Pixel 5", "Google Pixel 5a (5G)", "Google Pixel 6", "Google Pixel 6 Pro",
+  "Google Pixel 6a", "Google Pixel 7", "Google Pixel 7 Pro", "Google Pixel 8",
+  "Google Pixel 8 Pro", "Google Pixel Watch", "Google Pixel Fold", "Google Pixel Tablet",
+  "Google Pixel 7a"
 ];
+
+const googleMobileDevices = [
+  "Google Pixel", "Google Pixel XL", "Google Pixel 2", "Google Pixel 2 XL",
+  "Google Pixel 3", "Google Pixel 3 XL", "Google Pixel 3a", "Google Pixel 3a XL",
+  "Google Pixel 4", "Google Pixel 4 XL", "Google Pixel 4a", "Google Pixel 4a (5G)",
+  "Google Pixel 5", "Google Pixel 5a (5G)", "Google Pixel 6", "Google Pixel 6 Pro",
+  "Google Pixel 6a", "Google Pixel 7", "Google Pixel 7 Pro", "Google Pixel 8",
+  "Google Pixel 8 Pro", "Google Pixel Watch", "Google Pixel Fold", "Google Pixel Tablet",
+  "Google Pixel 7a"
+];
+
 
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
