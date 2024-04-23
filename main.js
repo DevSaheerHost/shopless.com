@@ -494,7 +494,24 @@ var allMobiles = [
   "Google Pixel 5", "Google Pixel 5a (5G)", "Google Pixel 6", "Google Pixel 6 Pro",
   "Google Pixel 6a", "Google Pixel 7", "Google Pixel 7 Pro", "Google Pixel 8",
   "Google Pixel 8 Pro", "Google Pixel Watch", "Google Pixel Fold", "Google Pixel Tablet",
-  "Google Pixel 7a"
+  "Google Pixel 7a", 
+
+
+  "OnePlus One", "OnePlus 2", "OnePlus X", "OnePlus 3", "OnePlus 3T",
+  "OnePlus 5", "OnePlus 5T", "OnePlus 6", "OnePlus 6T", "OnePlus 7",
+  "OnePlus 7 Pro", "OnePlus 7T", "OnePlus 7T Pro", "OnePlus 8",
+  "OnePlus 8 Pro", "OnePlus 8T", "OnePlus Nord", "OnePlus Nord N10 5G",
+  "OnePlus Nord N100", "OnePlus 9", "OnePlus 9 Pro", "OnePlus 9R",
+  "OnePlus Nord 2", "OnePlus Nord CE 5G", "OnePlus 10 Pro",
+  // Add the latest models from the search results
+  "OnePlus Ace 3V", "OnePlus Nord CE4", "OnePlus Watch 2", "OnePlus Nord N30",
+  "OnePlus SE 12R", "OnePlus 12", "OnePlus Ace 3", "OnePlus Pad Go",
+  "OnePlus Ace 2 Pro", "OnePlus Nord CE3", "OnePlus Nord 3", "OnePlus Nord N30",
+  "OnePlus Nord CE 3 Lite", "OnePlus Ace 2V", "OnePlus Pad", "OnePlus 11R",
+  "OnePlus Ace 2", "OnePlus 11", "OnePlus Nord N300", "OnePlus Nord Watch",
+  "OnePlus Ace Pro", "OnePlus Nord N20 SE", "OnePlus 10T", "OnePlus Nord 2T",
+  "OnePlus Ace Racing", "OnePlus Nord N20 5G", "OnePlus 10R 150W", "OnePlus 10R",
+  "OnePlus Nord CE 2 Lite 5G", "OnePlus Ace"
 ];
 
 const googleMobileDevices = [
@@ -505,6 +522,24 @@ const googleMobileDevices = [
   "Google Pixel 6a", "Google Pixel 7", "Google Pixel 7 Pro", "Google Pixel 8",
   "Google Pixel 8 Pro", "Google Pixel Watch", "Google Pixel Fold", "Google Pixel Tablet",
   "Google Pixel 7a"
+];
+
+const onePlusDevices = [
+  "OnePlus One", "OnePlus 2", "OnePlus X", "OnePlus 3", "OnePlus 3T",
+  "OnePlus 5", "OnePlus 5T", "OnePlus 6", "OnePlus 6T", "OnePlus 7",
+  "OnePlus 7 Pro", "OnePlus 7T", "OnePlus 7T Pro", "OnePlus 8",
+  "OnePlus 8 Pro", "OnePlus 8T", "OnePlus Nord", "OnePlus Nord N10 5G",
+  "OnePlus Nord N100", "OnePlus 9", "OnePlus 9 Pro", "OnePlus 9R",
+  "OnePlus Nord 2", "OnePlus Nord CE 5G", "OnePlus 10 Pro",
+  // Add the latest models from the search results
+  "OnePlus Ace 3V", "OnePlus Nord CE4", "OnePlus Watch 2", "OnePlus Nord N30",
+  "OnePlus SE 12R", "OnePlus 12", "OnePlus Ace 3", "OnePlus Pad Go",
+  "OnePlus Ace 2 Pro", "OnePlus Nord CE3", "OnePlus Nord 3", "OnePlus Nord N30",
+  "OnePlus Nord CE 3 Lite", "OnePlus Ace 2V", "OnePlus Pad", "OnePlus 11R",
+  "OnePlus Ace 2", "OnePlus 11", "OnePlus Nord N300", "OnePlus Nord Watch",
+  "OnePlus Ace Pro", "OnePlus Nord N20 SE", "OnePlus 10T", "OnePlus Nord 2T",
+  "OnePlus Ace Racing", "OnePlus Nord N20 5G", "OnePlus 10R 150W", "OnePlus 10R",
+  "OnePlus Nord CE 2 Lite 5G", "OnePlus Ace"
 ];
 
 
