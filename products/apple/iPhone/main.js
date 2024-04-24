@@ -30,7 +30,7 @@ const firebaseConfig = {
 //     console.log(data); // Logs the data object
 //     console.log("data " + JSON.stringify(data)); // Logs the string "data" followed by the stringified data object
 //   });
-  
+   
   
 
 // Reference to your database path
