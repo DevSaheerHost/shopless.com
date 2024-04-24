@@ -247,11 +247,14 @@ autocomplete(document.getElementById("search"), allMobiles);
 
   ///////////////////////////////
 
-
+  $(".close-input").hide()
   
   $("#search").click(function () {
-    $(".menu-button").toggle()
-    $(".close-input").toggle()
+    if (document.body.offsetWidth<800) {
+      
+      $(".menu-button").toggle()
+      $(".close-input").toggle()
+    }
     $(".out").toggle(200)
     document.querySelector("header").classList.toggle("headerFix")
     document.querySelector(".out").classList.toggle("outShow")
