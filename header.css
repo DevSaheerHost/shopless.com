@@ -197,6 +197,7 @@ nav{
     header button {
       display: none !important;
     }
+    
 
 }
 
@@ -214,24 +215,7 @@ nav{
     line-height: auto;
     font-size: 13px;
   }
-  header nav{
-    position: fixed;
-    right: 0;
-    width: 0;
-    max-width: 500px;
-    overflow: hidden;
-    background: white;
-    
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    display: block;
-    flex-flow: column;
-    justify-content: center;
-    align-items: left !important;
-    transition: all .1s;
-    box-shadow: 0 0 50px rgba(0, 0,0.3);
-  }
+  
   .menuOppen{
     width: 70%;
     padding-left: 10px;
@@ -247,10 +231,7 @@ nav{
   header nav .card:nth-child(1){
     margin-top: 70px;
   }
-  header .menu-button{
-    display: block;
-    z-index: 2;
-  }
+  
   header input-group{
     padding: 0px;
   }
@@ -272,6 +253,30 @@ nav{
  
   
   
+}
+@media (max-width: 800px) {
+  header nav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    max-width: 500px;
+    overflow: hidden;
+    background: white;
+    
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: block;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left !important;
+    transition: all .1s;
+    box-shadow: 0 0 50px rgba(0, 0,0.3);
+  }
+  header .menu-button{
+    display: block;
+    z-index: 2;
+  }
 }
 
 /* ----------searching auto fill style--------- */

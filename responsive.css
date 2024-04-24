@@ -46,7 +46,7 @@
     top: 0;
     bottom: 0;
     z-index: 2;
-    display: block;
+    /* display: block; */
     flex-flow: column;
     justify-content: center;
     align-items: left !important;
