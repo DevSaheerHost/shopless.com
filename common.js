@@ -212,43 +212,7 @@ autocomplete(document.getElementById("search"), allMobiles);
 
 
 
-const products = [
-    { heading: `Get even more attached to iPhone.`, href: '', text: "Snap on a MagSafe case, wallet or wireless charger. And connect with a USB-C cable.", image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-magsafe-202403_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1707850767641", class: "a" },
-    { heading: "AIRPODS", text: "Magic runs in the family", href: '', image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/watch-card-50-airpods-202209_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1661626394650", class: "b" },
-    { heading: `Explore all iphone<br>Accessories`, href: '', text: "", image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-accessories-202403_FMT_WHH?wid=618&hei=900&fmt=jpeg&qlt=90&.v=1707850767712", class: "c" },
-  ]
-  function createItem(item) {
-    return `<a href ="${item.href}"><div class="user-product card ${item.class}">
-  <div class="text-wrapper">
-    <h3>${item.heading}</h3>
-    <p> ${item.text}</p>
-  </div></a>
-  <style>
-  .${item.class}{
-    background-image: url("${item.image}") !important;
-    min-width: 300px;
-  }
-  
-  a{
-    color: black;
-    text-decoration: none;
-  }
-  </style>
-  
-  </div>`
-  }
-  function show() {
-  
-    const itemDiv = document.querySelector("#itemList")
-    products.forEach(product => {
-      itemDiv.innerHTML += createItem(product)
-  
-  
-  
-    })
-  }
-  
-  
+
   
   
   
@@ -319,8 +283,14 @@ function error() {
 
 }
 
+
 window.addEventListener('online', () => {
 
   document.querySelector('body').className = ''
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  showHint()
 })
 
